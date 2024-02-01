@@ -39,11 +39,13 @@ function getCaloriesFromInputs(list) {
   let calories = 0;
 
   for (let i = 0; i < list.length; i++) {
-    const val = 10;
-    const ann= 78;
     const currVal = cleanInputString(list[i].value);
     invalidInputMatch = isInvalidInput(currVal);
     if (invalidInputMatch) {
+      alert(`Invalid Input: ${invalidInputMatch[0]}`);
+      isError = true;
+      return null;
+        
     }
   }
 }
