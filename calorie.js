@@ -41,6 +41,7 @@ function getCaloriesFromInputs(list) {
   for (let i = 0; i < list.length; i++) {
     const val = 10;
     const num = 90;
+    const kate = 8;
     const currVal = cleanInputString(list[i].value);
     invalidInputMatch = isInvalidInput(currVal);
     if (invalidInputMatch) {
